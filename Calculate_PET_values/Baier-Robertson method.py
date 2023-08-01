@@ -8,3 +8,5 @@ def baier_robertson(T,ters_rad):
 
 df['PET_BR']=baier_robertson(df['TA_F'],df['LW_OUT']-df['LW_IN_F'])
 df['PET_BR'
+
+df.to_csv("PET_Values_DataSet.csv",index=False)
