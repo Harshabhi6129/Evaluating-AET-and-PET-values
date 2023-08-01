@@ -10,3 +10,5 @@ df['AET_M2015_OD']=(1/ε)*(((1+ε)*df['PET_PT'])-df['PET_OD']);
 df['AET_M2015_Ham']=(1/ε)*(((1+ε)*df['PET_PT'])-df['PET_Ham']);
 df['AET_M2015_TH']=(1/ε)*(((1+ε)*df['PET_PT'])-df['PET_TH']);
 df['AET_M2015_BR']=(1/ε)*(((1+ε)*df['PET_PT'])-df['PET_BR'])
+
+df.to_csv("AET_Values_DataSet.csv",index=False)
